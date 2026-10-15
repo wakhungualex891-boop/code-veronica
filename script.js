@@ -1,7 +1,10 @@
-document.getElementById("contactForm").addEventListener("submit", function(event) {
-    event.preventDefault();
+document.getElementById("contactForm")
+.addEventListener("submit", function(e){
 
-    alert("Thank you for contacting Veronica Music Label!");
+    e.preventDefault();
+
+    alert("Thank you for contacting Veronica Records!");
 
     this.reset();
+
 });
