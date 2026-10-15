@@ -16,16 +16,14 @@ nav{
     justify-content:space-between;
     align-items:center;
     padding:20px 8%;
-    background:#000;
+    background:black;
     position:sticky;
     top:0;
     z-index:1000;
 }
 
-.logo{
-    color:#00ffff;
-    font-size:28px;
-    font-weight:bold;
+.logo img{
+    height:60px;
 }
 
 nav ul{
@@ -49,10 +47,13 @@ nav ul li a:hover{
 .hero{
     height:100vh;
     background:
-    linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.7)),
-    url("https://images.unsplash.com/photo-1501386761578-eac5c94b800a?w=1500");
+    linear-gradient(rgba(0,0,0,0.6),
+    rgba(0,0,0,0.7)),
+    url("images/hero.jpg");
+
     background-size:cover;
     background-position:center;
+
     display:flex;
     justify-content:center;
     align-items:center;
@@ -69,11 +70,11 @@ nav ul li a:hover{
 
 .btn{
     display:inline-block;
-    padding:14px 30px;
+    text-decoration:none;
     background:#00ffff;
     color:black;
+    padding:15px 30px;
     border-radius:30px;
-    text-decoration:none;
     font-weight:bold;
 }
 
@@ -83,8 +84,8 @@ section{
 }
 
 section h2{
-    margin-bottom:40px;
     color:#00ffff;
+    margin-bottom:40px;
 }
 
 .artist-container{
@@ -94,15 +95,15 @@ section h2{
 }
 
 .artist-card{
-    background:#151515;
+    background:#1a1a1a;
     border-radius:15px;
     overflow:hidden;
-    transition:.4s;
+    transition:0.4s;
 }
 
 .artist-card:hover{
     transform:translateY(-10px);
-    box-shadow:0 0 25px #00ffff;
+    box-shadow:0 0 20px #00ffff;
 }
 
 .artist-card img{
@@ -126,7 +127,7 @@ section h2{
 }
 
 .release{
-    background:#151515;
+    background:#1a1a1a;
     padding:25px;
     border-radius:10px;
 }
@@ -136,7 +137,7 @@ section h2{
 }
 
 .event{
-    background:#151515;
+    background:#1a1a1a;
     padding:20px;
     margin:20px auto;
     max-width:600px;
@@ -163,14 +164,8 @@ button{
     border:none;
     padding:15px 30px;
     border-radius:30px;
-    font-weight:bold;
     cursor:pointer;
-}
-
-footer{
-    background:#000;
-    text-align:center;
-    padding:40px;
+    font-weight:bold;
 }
 
 .socials{
@@ -179,12 +174,18 @@ footer{
 
 .socials a{
     color:#00ffff;
-    font-size:30px;
+    font-size:28px;
     margin:0 10px;
 }
 
 .socials a:hover{
     color:white;
+}
+
+footer{
+    background:black;
+    text-align:center;
+    padding:40px;
 }
 
 @media(max-width:768px){
@@ -195,6 +196,8 @@ footer{
 
     nav ul{
         margin-top:15px;
+        flex-wrap:wrap;
+        justify-content:center;
     }
 
     .hero h1{
